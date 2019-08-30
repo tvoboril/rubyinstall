@@ -116,15 +116,11 @@ $ rvm use 2.5.6@testbay1 --create
 ```
 switch to Testbay1
 ```
-$ rvm use testbay1
+$ rvm gemset use testbay1
 ```
 or go back to default
 ```
-$ rvm use @default
-```
-or
-```
-rvm gemset use default #
+rvm gemset use default
 ```
 
 
