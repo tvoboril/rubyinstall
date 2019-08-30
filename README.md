@@ -69,6 +69,32 @@ $ ruby -v
 ruby 2.5.6.
 ```
 
+Check what version of Ruby is being used as default
+
+```
+$ rvm list
+   ruby-2.5.1 [ x86_64 ]
+=* ruby-2.5.6 [ x86_64 ]
+
+# => - current
+# =* - current && default
+#  * - default
+```
+
+If you need to change from the system or version
+
+either change what is being used
+```
+$ rvm use 2.5.6
+```
+
+or change the default
+
+```
+$ rvm --default use 2.5.6
+```
+
+
 Check and update gem 
 ```
 $ gem -v
@@ -96,4 +122,9 @@ $ gem install rails
 ```
 $ rails -v
 Rails 5.2.0
+```
+#### Set Auto Completion
+Add to the bottom of your .bash_profile
+```
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 ```
