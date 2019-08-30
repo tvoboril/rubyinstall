@@ -104,6 +104,29 @@ Use gem update --system to upgrade the Ruby gem manager:
 ```
 $ gem update --system
 ```
+### OPTIONAL Create Gemset
+
+```
+$ rvm 2.5.6
+$ rvm gemset create testbay1
+```
+or
+```
+$ rvm use 2.5.6@testbay1 --create
+```
+switch to Testbay1
+```
+$ rvm use testbay1
+```
+or go back to default
+```
+$ rvm use @default
+```
+or
+```
+rvm gemset use default #
+```
+
 
 #### Install Bundler
 ```
