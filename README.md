@@ -1,2 +1,6 @@
-# rubyinstall
-Ruby Install for Mac
+# Ruby Install for Mac
+
+#Check XCODE
+xcode-select -p
+
+
